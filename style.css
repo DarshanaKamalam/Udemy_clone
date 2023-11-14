@@ -12,7 +12,6 @@
     margin: 2px;
     display: flex;
     flex: 1 0 0;
-    /* flex-shrink: 2; */
     align-items: center;
     justify-content: space-around;
     border-bottom: solid black 1px;
