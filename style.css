@@ -5,6 +5,8 @@
 }
 .navbar
 {
+    position: sticky;
+    top: 0;
     height:50px;
     padding: 2px;
     margin: 2px;
@@ -14,6 +16,28 @@
     align-items: center;
     justify-content: space-around;
     border-bottom: solid black 1px;
+    background-color: white;
+    z-index: 2;
+}
+.mylearning
+{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__pop
+{
+    position: absolute;
+    top: 150%;
+    background-color: white;
+    padding: 10px;
+    border: solid grey 2px;
+    border-radius: 5px;
+    width: 100px;
+    display: none;
+}
+.mylearning:hover .mylearning__pop
+{
+    display: block;
 }
 .logo h2
 {
@@ -77,8 +101,10 @@
     height: 120px;
     padding: 30px;
     margin: 20px;
-    z-index: 1;
-    position: 0px 0px;
+    position: absolute;
+    top: 140px;
+    left: 60px;
+
 }
 .recommended
 {
